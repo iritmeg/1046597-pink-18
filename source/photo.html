@@ -1,156 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Пинк</title>
-	<link rel="stylesheet" type="text/css" href="">
-	<link rel="stylesheet" type="text/css" href="">
-	<link href=""> 
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
-	<header class="page-header">
+<header class="page-header">
+  <div class="top-line">
+    <a class="top-line__logo"> <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink"> </a>
+    <button class="top-line__button"> <img src="img/icon-menu-burger.svg" width="49" height="24"> </button>
+  </div>
+<nav class="main-nav">
+  <ul class="main-nav__list site-list">
+    <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
+    <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
+    <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
+    <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
+  </ul>
+</nav>
+  <section class="users-foto">
+    <h1 class="users-foto__title"> Фотографии пользователей </h1>
+  </section>
 
-		<div class="top-line">
-			<a class="top-line__logo"> <img class="page-header_logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип pink"> </a>
-			<button class="top-line__button"> <img src="https://via.placeholder.com/50x50" width="50" height="50"> </button>
-		</div>
+</header>
 
-		<nav class="main-nav">
-			<ul class="main-nav__list site-list"> 
-				<li class="site-list__item"> <a href="#"> Главная  </a>  </li> 
-				<li class="site-list__item"> <a href="photo.html"> Фотографии  </a> </li>
-				<li class="site-list__item"> <a href="#"> Конкурс </a> </li>
-				<li class="site-list__item"> <a href="#"> HTML Academy  </a> </li>
-			</ul>
-		</nav>
-	</header>
+<main class="page-photo">
+  <section class="upsend-foto">
+    <h2 class="upsend-foto__title"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </h2>
+  </section>
 
-	<main class="page-photo">
+  <section class="foto-users">
+    <ul class="foto-users__list">
+      <li class="foto-users__item foto-users__item--big">
+        <img  class="foto-users__image foto-users__image--big" src="img/panorama-mobile@1x.jpg" width="280" height="180">
+        <p class="foto-users__eddition"> Панорама дня </p>
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Анна <span class="foto-users__span" >(5 минут назад) </span></b>
+          <p class="foto-users__text">  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
+          <button class="foto-users__button" type="button"> <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
+          <p class="foto-users__like"> Нравится: 215 </p>
+        </div>
+      </li>
 
+      <li class="foto-users__item">
+        <img class="foto-users__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Левон <span class="foto-users__span"> (5 часов назад)</span></b>
+          <p class="foto-users__text"> Вчера он на луну летал, сегодня в руки к нам попал. </p>
+          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
+          <p class="foto-users__like"> Нравится: 356 </p>
+        </div>
+      </li>
 
-		<section class="users-foto">
-			<h1 class="users-foto__title"> Фотографии пользователей </h1>
-		</section>
+      <li class="foto-users__item" >
+        <img class="foto-users__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author">Антон <span class="foto-users__span">(12 часов назад)</span></b>
+          <p class="foto-users__text"> Соседи будут рады! </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
+          <p class="foto-users__like"> Нравится: 666 </p>
+        </div>
+      </li>
 
-		<section class="upsend-foto">
-			<h2 class="upsend-foto__title"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </h2>
-			
-		</section>
-
-
-		<section class="foto-users">
-			<ul class="foto-users__list">
-				<li class="foto-users__item foto-users__item--big"> 
-					<img  class="foto-users__image" src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Анна (5 минут назад)</cite>
-					<p>  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 215 </p>
-				</li>
-
-				<li class="foto-users__item">
-					<img class="foto-users__image" src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Левон (5 часов назад) </cite>
-					<p> Вчера он на луну летал, сегодня в руки к нам попал. </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 356 </p>
-				</li>
-
-				<li class="foto-users__item" >
-					<img src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Антон (12 часов назад) </cite>
-					<p> Соседи будут рады! </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 666 </p>
-				</li>
-
-				<li class="foto-users__item">
-					<img src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Борис (20 часов назад) </cite>
-					<p>  Здесь могла быть ваша цитата о высоком и вечном.</p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 215  </p>
-				</li>
-
-
-				<li class="foto-users__item">
-					<img src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Сергей (25 часов назад) </cite>
-					<p> Самая кубанская в мире! </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 4  </p>
-				</li>
-
-				<li class="foto-users__item">
-					<img src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Максим (40 часов назад) </cite>
-					<p> Где снег-то? </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 150  </p>
-				</li>
+      <li class="foto-users__item">
+        <img class="foto-users__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Борис <span class="foto-users__span">(20 часов назад)</span> </b>
+          <p class="foto-users__text">  Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
+          <p class="foto-users__like"> Нравится: 215  </p>
+        </div>
+      </li>
 
 
-				<li class="foto-users__item">
-					<img src="https://via.placeholder.com/150x150">
-					<cite class="foto-users__cite-author"> Надежда (45 часов назад) </cite>
-					<p> Всем GM и взаимные лайки!  </p>
-					<button type="button">  <img class="https://via.placeholder.com/20x20" src="">  </button>
-					<p> Нравится: 2560 </p>
-				</li>
-			</uL>
-		</section>
+      <li class="foto-users__item">
+        <img class="foto-users__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Сергей <span class="foto-users__span">(25 часов назад)</span></b>
+          <p class="foto-users__text"> Самая кубанская в мире! </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
+          <p class="foto-users__like"> Нравится: 4  </p>
+        </div>
+      </li>
+
+      <li class="foto-users__item">
+        <img class="foto-users__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Максим <span class="foto-users__span">(40 часов назад)</span> </b>
+          <p class="foto-users__text"> Где снег-то? </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
+          <p class="foto-users__like"> Нравится: 150  </p>
+        </div>
+      </li>
 
 
-		<form class="form" action="" method="get">
+      <li class="foto-users__item">
+        <img class="foto-users__image" src="img/photo-wing-mobile@1x.jpg" width="260" height="160">
+        <div class="foto-users-wrapper">
+        <b class="foto-users__cite-author"> Надежда <span class="foto-users__span">(45 часов назад)</span></b>
+          <p class="foto-users__text"> Всем GM и взаимные лайки!  </p>
+          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
+          <p class="foto-users__like"> Нравится: 2560 </p>
+        </div>
+      </li>
+  </ul>
+</section>
 
-			<section class="up-foto">
-				<h2 class="up-foto__title"> Затмите их всех! Выкладывайте все, что накопилось в телефоне! </h2>
-			</section>
+<form class="form" action="https://echo.htmlacademy.ru" method="get">
+  <section class="up-foto">
+    <h2 class="up-foto__title"> Затмите их всех!<br> Выкладывайте все, что накопилось в <br> телефоне! </h2>
+  </section>
 
-
-
-
-			<section class="exsemple-post">
-				<img class="exsemple-post__img" src="https://via.placeholder.com/150x150"> <br>
-				<button class="exsemple-post__btn" type="button"> <img class="" src="https://via.placeholder.com/50x50"> </button>
-				<button class="exsemple-post__btn" type="button"> <img class="" src="https://via.placeholder.com/50x50"> </button>
-				<button class="exsemple-post__btn" type="button"> <img class="" src="https://via.placeholder.com/50x50"> </button>
-
-				<div class="exsemple-post__slidecontainer">
-					<input class="exsemple-post__input" type="range" min="1" max="100" value="50" class="slider" id="myRange">
-				</div>
-
-				<div class="exsemple-post__submit bottons-submit"> 
-					<button class="bottons-submit__post" type="submit"> Запостить</button>
-					<button class="bottons-submit__post" type="submit"> Отмена </button>
-				</div>
-			</section>
-		</form>
+  <section class="exsemple-post">
+    <img class="exsemple-post__img" src="img/photo-road-mobile@1x.jpg">
+    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-crop.svg"> </button>
+    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-fill.svg"> </button>
+    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-contrast.svg"> </button>
 
 
+    <div class="exsemple-post__slidecontainer">
+      <input class="exsemple-post__input" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
 
-<div class="footer-wrapper footer-wrapper--photo">
-	<footer class="footer">
-			<a class="footer__link" href="#"> <img class="footer__img" src="https://via.placeholder.com/50x50" alt="Логотип"> </a>  
-		
+    <div class="exsemple-post__submit bottons-submit">
+      <button class="bottons-submit__post" type="submit"> Запостить</button>
+      <button class="bottons-submit__post bottons-submit__post--b " type="button"> Отмена </button>
+    </div>
+  </section>
+</form>
 
-		<div class="social-icons">
-			<ul class="social-icons__list">
-				<li class="social-icons__list"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="https://via.placeholder.com/50x50" src ="" width="" height="" alt="Логотип сайта Твитер"> </a>  
-				</li> 
-				<li class="social-icons__list"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="https://via.placeholder.com/50x50" src ="" width="" height="" alt="Логотип сайта Фейсбук"> </a>  
-				</li> 
-				<li class="social-icons__list"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="https://via.placeholder.com/50x50" src ="" width="" height="" alt="Логотип сайта Ютуб"> </a>  
-				</li> 
-			</ul>
-		</div>
+<footer class="footer footer-form">
+  <a class="footer__link" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
+  <ul class="social-icons">
+    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="social-icons__img" src ="img/icon-twitter.svg" width="15" height="18" alt="Логотип сайта Твитер"> </a>
+    </li>
+    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="social-icons__img" src ="img/icon-facebook.svg" width="15" height="18" alt="Логотип сайта Фейсбук"> </a>
+    </li>
+    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="social-icons__img" src ="img/icon-youtube.svg" width="15" height="18" alt="Логотип сайта Ютуб"> </a>
+    </li>
+  </ul>
 
-		<div class="reference">
-			<p class="reference_text"> Разработано </p>
-		</div>
-		<div class="reference__wrapper">
-			<a class="reference__link" href="https://htmlacademy.ru/intensive/htmlcss"> 
-				<img class="reference__img" src="https://via.placeholder.com/50x50" width="" height="" alt="Логотип HTML Academy">  
-			</a>
-	</footer>
-</div>
+  <div class="reference">
+    <p class="reference__text"> Разработано </p>
+    <a class="reference__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <img class="reference__img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
+  </div>
+
+</footer>
+
