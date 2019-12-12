@@ -1,17 +1,27 @@
 .top-line {
   height:65px;
   background-color:rgba(0,0,0,0.3);
-  display: flex;
+  display:flex;
   justify-content:space-around;
 
-}
-.top-line__logo {
-
-
 
 }
-.top-line__button {
+
+.top-line__tablet{
+  display:none;
+
+}
 
 
+@media (min-width: 768px){
+
+
+  .page-header_logo-image {
+    display:none;
+  }
+
+.top-line__tablet{
+  display:inline;
+}
 
 }
