@@ -28,3 +28,51 @@
 }
 
 
+@media (min-width: 768px){
+  .map__image {
+    height:500px;
+    background-image:url(../img/bg-map-tablet@1x.jpg);
+    background-repeat:no-repeat;
+    background-size:800px 800px;
+    background-position: bottom ;
+  }
+
+
+.map__image::before {
+  content:"";
+  height:63px;
+  display:block;
+  background-image:url('../img/bg-triangle-white-footer.svg');
+  background-repeat:no-repeat;
+
+
+}
+
+.map__icon{
+  position:absolute;
+  left:363px;
+  top:204px;
+
+}
+
+}
+
+@media (min-width: 1024px){
+.map__image {
+    background-image:url(../img/bg-map-desktop@1x.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center ;
+
+  }
+
+
+.map__icon{
+  position:absolute;
+  left:733px;
+  top:312px;
+
+}
+
+
+}

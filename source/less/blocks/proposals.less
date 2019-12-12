@@ -16,10 +16,105 @@
   font-size: 24px;
   display:inline-block;
 
-
-
 }
+
 .proposals__title--second {
   margin-top:48px;
 }
 
+.proposals__pictures{
+  display:none;
+}
+.list-paragraph__text{
+  text-align:center;
+}
+
+
+
+@media(min-width: 768px){
+
+
+.proposals__wrapper{
+  padding-top:10px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+
+.proposals__title{
+  width:100%;
+  font-size: 40px;
+  line-height:50px;
+  margin:0px;
+
+}
+
+.proposals__title--second {
+  width:350px;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom: 1px;
+}
+
+
+
+.list-paragraph__wrapper{
+  display:flex;
+  justify-content: space-around;
+  position:relative;
+  top:-50px;
+}
+
+.list-paragraph{
+  order:1;
+}
+
+.list-paragraph__item{
+  text-align:left;
+}
+
+
+.list-paragraph__text{
+  text-align:left;
+}
+
+
+}
+
+@media(min-width: 1024px){
+ .list-paragraph{
+  width:100%;
+  display:flex;
+  justify-content:center;
+ }
+
+.proposals__img{
+  display:none;
+
+}
+
+.list-paragraph__wrapper{
+  display:block;
+  position:relative;
+  top:-80px;
+
+}
+
+.proposals__pictures{
+  display:inline-block;
+  margin-bottom: 20px;
+
+
+
+}
+
+.list-paragraph__triagle{
+  width:100%;
+
+}
+.list-paragraph__item{
+  text-align:center;
+
+}
+
+}
