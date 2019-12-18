@@ -4,8 +4,9 @@
 
 @media(min-width: 768px){
 .effect-time{
+  padding-top:40px;
   display:flex;
-  background-color:@greybg-color;
+  background-color:@white-color;
 
 }
 
@@ -16,9 +17,42 @@
 
 .effect-time__wrapper{
   width:50%;
-  padding-left:30px;
   box-sizing:border-box;
+  position:relative;
 }
+
+.effect-time__img{
+  padding-left:30px;
+}
+
+
+
+
+.effect-time__span{
+  display:flex;
+  width:190px;
+  height:190px;
+  font-size:96px;
+  color:@redtext_color;
+  font-weight: 700;
+  position:absolute;
+  left: 48px;
+  top:62px;
+  box-sizing:border-box;
+  border:10px solid @redtext_color;
+  border-radius:200px;
+  padding:0px;
+  margin:0px;
+
+}
+
+.effect-time__number{
+  margin:auto;
+
+
+}
+
+
 
 .effect-time__title{
   width:200px;
@@ -40,6 +74,8 @@
 
 .effect-time__link{
   color:@redtext_color;
+  font-family:"opensans","arial",sans-serif;
+  line-height: 24px;
 }
 
 }
@@ -57,6 +93,21 @@
   padding-left:150px;
 
 }
+
+
+
+.effect-time__span{
+  position:absolute;
+  left: 200px;
+  top:62px;
+
+}
+
+
+
+
+
+
 
 .effect-time__text{
   width:400px;
