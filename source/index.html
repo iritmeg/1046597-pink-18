@@ -11,22 +11,25 @@
 <header class="page-header">
 
 <div class="top-line">
+  <div class="top-line__wrapper">
   <a class="top-line__logo"> <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink"> </a>
   <a class="top-line__tablet"> <img class="page-header_logo-imagetablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип pink"> </a>
+  <a class="top-line__desctop"> <img class="page-header_logo-imagedesctop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип pink"> </a>
   <button class="top-line__button"> <img src="img/icon-menu-burger.svg" width="49" height="24"> </button>
 </div>
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
+      <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
+    </ul>
+  </nav>
+</div>
 
-<nav class="main-nav">
-  <ul class="main-nav__list site-list">
-    <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
-    <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
-  </ul>
-</nav>
+
 
 <section class="main-banner">
-
 <div class="main-banner__wrapper">
   <h1 class="main-banner__title ">Взгляните на жизнь<br>иначе!</h1>
   <img  class="main-banner__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286">
@@ -113,21 +116,53 @@
 <section class="prices">
   <h2 class="visually-hidden"> Расценки и удобства </h2>
     <table class="prices__table table-pricing">
-      <caption class="table-pricing__caption"> Стандарт
+      <thead>
+        <tr>
+      <th class="table-pricing__caption table-pricing__caption--umpy table-pricing__caption--tablet"> </th>
+      <th class="table-pricing__caption table-pricing__caption--tablet"> База
+        <span class="table-pricing__price"> 1,99 USD </span>
+      </th>
+      <th class="table-pricing__caption"> Стандарт
         <span class="table-pricing__price"> 3,99 USD </span>
-        <span class="table-pricing__spacial"> ХИТ </span>
-        </caption>
+        <span class="table-pricing__spacial"> <span class="table-pricing__hit"> ХИТ </span> </span>
+        </th>
+        <th class="table-pricing__caption table-pricing__caption--tablet"> Анлим
+        <span class="table-pricing__price"> 9,99 USD </span>
+        </th>
+        </tr>
+      </thead>
+      <tbody>
         <tr class="table-pricing__cells">
           <td class="table-pricing__text">Розовый фильтр</td>
+          <td class="table-pricing__imagecell table-pricing__imagecell--tablet">
+            <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg>
+          </td>
           <td class="table-pricing__imagecell">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg>
+          </td>
+          <td class="table-pricing__imagecell table-pricing__imagecell--tablet">
+            <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
             <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
             </svg>
           </td>
       </tr>
       <tr class="table-pricing__cells">
-          <td> Смайлики</td>
+          <td class="table-pricing__text"> Смайлики</td>
+           <td class="table-pricing__imagecell table-pricing__imagecell--no table-pricing__imagecell--tablet">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+            </svg>
+        </td>
           <td class="table-pricing__imagecell">
+            <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg>
+          </td>
+          <td class="table-pricing__imagecell table-pricing__imagecell--tablet">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
             <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
             </svg>
@@ -135,12 +170,23 @@
       </tr>
       <tr class="table-pricing__cells">
           <td class="table-pricing__text">Комментарии </td>
-          <td class="table-pricing__imagecell table-pricing__imagecell--no">
+          <td class="table-pricing__imagecell table-pricing__imagecell--no table-pricing__imagecell--tablet">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
             <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
             </svg>
         </td>
+          <td class="table-pricing__imagecell table-pricing__imagecell--no">
+            <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+            </svg>
+        </td>
+        <td class="table-pricing__imagecell table-pricing__imagecell--tablet">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg>
+          </td>
       </tr>
+    </tbody>
     </table>
 
 <div class="prices__toggles slider">
@@ -168,6 +214,7 @@
 <section class="map">
   <div class="map__image">
     <img class="map__icon" src="img/icon-map-marker.svg">
+  </div>
 <div class="footer footer-form-index">
   <a class="footer__link" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
   <ul class="social-icons">

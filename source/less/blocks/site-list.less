@@ -1,26 +1,56 @@
-.site-list {
-  display:none;
-  background-color:@text-color;
-  color:@white-color;
-
-}
-.site-list__item {
-
-}
-.site-list__link {
-
-}
-
-.main-nav__list{
-
-}
-@media (min-width: 1024px) {
-  .site-list {
-    display:inline;
-
-
+  .main-nav{
+    width:100%;
+    background-color:@text-color;
 
   }
 
+  .site-list {
+    display:block;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+  }
 
+.site-list__item{
+  padding:10px;
+  border-bottom:2px solid black;
+}
+
+
+.site-list__link{
+ color:@white-color;
+ font-family:"opensansbold","Arial",sans-serif;
+ text-decoration:none;
+ font-size: 18px;
+ text-transform: uppercase;
+
+}
+
+
+
+@media(min-width: 1024px) {
+
+  .main-nav{
+    background-color:transparent;
+    width:auto;
+  }
+
+  .site-list{
+    display:flex;
+    justify-content:space-around;
+
+  }
+
+  .site-list__item{
+  padding-left:60px;
+  border-bottom:none;
+
+  }
+
+  .site-list__link{
+    font-family:"opensans","Arial",sans-serif;
+    line-height: 18px;
+    text-transform: none;
+
+  }
 }
