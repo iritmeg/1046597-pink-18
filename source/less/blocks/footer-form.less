@@ -35,6 +35,11 @@
 
 }
 
+.footer__link--desctope{
+  display:none;
+}
+
+
 @media (min-width: 768px) {
   .footer-form-index{
     width:100%;
@@ -74,8 +79,30 @@
 @media (min-width: 768px){
 .footer-form-form{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     background-color:@white-color;
+    padding-left:10px;
+    padding-right:10px;
+
+
+  }
 
 }
+
+/*footer dlq form*/
+@media (min-width: 1024px){
+  .footer-form-form{
+    width:936px;
+    margin:20px auto;
+  }
+
+
+.footer__link--desctope{
+  display:inline-flex;
+}
+
+.footer__link{
+  display:none;
+}
+
 }
