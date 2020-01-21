@@ -1,5 +1,7 @@
+
 .main-banner {
  text-align:center;
+
 }
 
 .main-banner__title {
@@ -13,7 +15,93 @@
 
 .main-banner__image {
  display:block;
- margin-top: 113px;
  margin-right:auto;
 }
 
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+.main-banner{
+  position:relative;
+}
+
+.main-banner__wrapper{
+  width:40%;
+  padding-bottom:40px;
+
+}
+
+
+.main-banner__image{
+  position: absolute;
+  left:30px;
+  top:60px;
+  width:700px;
+  height:420px;
+
+}
+.main-banner__title{
+  width:220px;
+  font-size:40px;
+  font-weight:300;
+  line-height: 40px;
+  margin:0px;
+  padding-top:40px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px){
+  .main-banner{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:500px;
+
+}
+
+.main-banner__picture{
+  order:3;
+  width:50%;
+
+}
+
+
+.main-banner__wrapper{
+  width:19%;
+  order:1;
+  margin:0 auto;
+  padding-top:40px;
+
+}
+.main-banner__title{
+  font-size:40px;
+  font-weight:300;
+  letter-spacing:2px;
+  line-height: 50px;
+  margin:0px;
+}
+
+.main-banner__image{
+  width:850px;
+  height:450px;
+  margin-top:20px;
+
+
+
+}
+
+
+}

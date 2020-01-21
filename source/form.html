@@ -7,13 +7,17 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
-<header class="page-header page-header-form">
+<header class="page-header page-header--form">
 
 <div class="top-line">
   <div class="top-line__wrapper">
-  <a class="top-line__logo"> <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink"> </a>
-  <a class="top-line__tablet"> <img class="page-header_logo-imagetablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип pink"> </a>
-  <a class="top-line__desctop"> <img class="page-header_logo-imagedesctop" src="img/logo-pink-white-desktop.svg" width="145" height="35" alt="Логотип pink"> </a>
+    <a class="top-line__logo">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/logo-pink-white-desktop.svg" width="145" height="35" alt="Логотип pink">
+        <source media="(min-width:768px)" srcset="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип pink">
+        <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink">
+      </picture>
+    </a>
   <button class="top-line__button"> <img src="img/icon-menu-burger.svg" width="49" height="24"> </button>
 </div>
   <nav class="main-nav">
@@ -53,26 +57,17 @@
   <h3 class="visually-hidden"> Разные достижения</h3>
     <fieldset class="form__fieldset form__fieldsetachivments" >
     <legend class="form__legend"> Ваши безбашенные достижения в путешествии </legend>
-    <div>
+    <div class="achivments-list__wrapper">
       <ul class="form-achivments_list achivments-list">
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" checked > <span class="achivments-list__text">Сделал селфи с акулой</span> </label> </li>
-
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" checked > <span class="achivments-list__text"> Обгорел на пляже </span> </label> </li>
       </ul>
-    </div>
-
-    <div>
-<ul class="form-achivments_list achivments-list">
+      <ul class="form-achivments_list achivments-list">
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" > <span class="achivments-list__text"> Видел Чака Норриса </span> </label> </li>
-
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" > <span class="achivments-list__text"> Накупил сувениров </span> </label> </li>
-</ul>
-</div>
-<div>
-<ul class="form-achivments_list achivments-list">
-
+      </ul>
+      <ul class="form-achivments_list achivments-list">
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" checked > <span class="achivments-list__text"> Удержал башню </span> </label> </li>
-
         <li class="achivments-list__item"> <label> <input class="achivments-list__input" type="checkbox" name="box" > <span class="achivments-list__text"> Разгромил отель </span> </label> </li>
       </ul>
     </div>
@@ -127,8 +122,12 @@
 </main>
 
  <footer class="footer footer-form-form">
-  <a class="footer__link" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
-  <a class="footer__link--desctope" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-desktop.svg" alt="Логотип2"> </a>
+  <a class="footer__link" href="index.html">
+    <picture>
+    <source media="(min-width:1024px)" srcset="img/logo-pink-blue-desktop.svg" >
+    <img class="footer__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+  </picture>
+ </a>
   <ul class="social-icons">
     <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="social-icons__img" src ="img/icon-twitter.svg" width="15" height="18" alt="Логотип сайта Твитер"> </a>
     </li>
