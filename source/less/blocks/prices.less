@@ -3,24 +3,28 @@
   margin-top:30px;
   background-color:#f2f2f2;
   overflow:hidden;
-
-
 }
+
+.prices__triagle{
+  width:100%;
+  margin-bottom:30px;
+}
+
+
 .table-pricing__umpy{
   display:none;
 }
 
 
 .table-pricing {
-  width:1043px;
+  width:920px;
   margin:0 auto;
   border-collapse:collapse;
   border:2px solid #f2f2f2;
   position:relative;
-  left:-327px;
-
-
+  left:-299px;
 }
+
 .table-pricing__caption{
   background-color:#283645;
   font-family:"opensansbold","Arial",sans-serif;
@@ -99,12 +103,26 @@
   margin-top:30px;
  }
 
+ .table-pricing__inside{
+  display:flex;
+  justify-content: space-between;
+ }
 
-@media (min-width: 768px) {
+
+@media (min-width: 660px) {
+
+.table-pricing__inside{
+  display:inline;
+}
+
+.prices__triagle{
+  margin-bottom:0px;
+}
+
 
 .table-pricing{
   position:static;
-  width:90%;
+  width:100%;
 
 }
 
@@ -114,6 +132,7 @@
 
 
 }
+
 
 .table-pricing__spacial{
   background-image:url(../img/bg-hit-tablet.svg);
@@ -147,11 +166,11 @@
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
 
 .table-pricing{
   position:static;
-  width:1200px;
+  width:90%;
 
 }
 
