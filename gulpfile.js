@@ -54,9 +54,9 @@ imagemin.svgo()
 
 
 gulp.task("build-copy", function(){
-  return gulp.src("source/**/*.{html,woff,woff2}")
-.pipe(replace('style.css', 'style.min.css'))
-.pipe(gulp.dest("build/"));
+  return gulp.src("source/**/*.{html,woff,woff2,js}")
+  .pipe(replace('style.css', 'style.min.css'))
+  .pipe(gulp.dest("build/"));
 
 });
 
