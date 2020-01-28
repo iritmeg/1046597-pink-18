@@ -1,16 +1,29 @@
 .prices {
-  margin-top:30px;
+  padding-bottom:40px;
   background-color:#f2f2f2;
-
+  overflow:hidden;
 }
 
-.table-pricing {
+.prices__triagle{
   width:100%;
+  margin-bottom:30px;
+}
+
+
+.table-pricing__umpy{
+  display:none;
+}
+
+
+.table-pricing {
+  width:920px;
   margin:0 auto;
   border-collapse:collapse;
   border:2px solid #f2f2f2;
-
+  position:relative;
+  left:-299px;
 }
+
 .table-pricing__caption{
   background-color:#283645;
   font-family:"opensansbold","Arial",sans-serif;
@@ -19,7 +32,10 @@
   border:2px solid #f2f2f2;
   padding-bottom:25px;
   padding-top:15px;
+  position:relative;
+
 }
+
 
 .table-pricing__price{
   display:block;
@@ -28,23 +44,51 @@
 }
 
 .table-pricing__text{
+  line-height: 30px;
+  text-transform: uppercase;
+  padding:5px 30px;
 
 }
 
 .table-pricing__spacial{
-  background-color:#d22856;
-  color:@white-color;
-  padding:5px;
+  display:block;
+  background-image:url(../img/bg-hit.svg);
+  height:74px;
+  width:73px;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:2px;
+  top:2px;
+
 }
 
+.table-pricing__hit{
+  display:block;
+  color:@white-color;
+  transform: rotate(-47deg);
+  padding-top:12px;
+  padding-right:25px;
+  font-family:"opensans","Arial",sans-serif;
+  font-size: 10px;
+  line-height: 21px;
+
+}
 
 .table-pricing__cells{
   font-family:"opensans","Arial",sans-serif;
   color:#283645;
-  border:2px solid #f2f2f2;
+  border:3px solid #f2f2f2;
   background-color:#ffffff;
+  border-collapse:collapse;
 }
 
+.table-pricing__imagecell{
+  position:relative;
+  border:3px solid #f2f2f2;
+  border-collapse:collapse;
+  padding:5px 30px;
+
+}
 
 .table-pricing__imagecell path{
   fill:#3dc644;
@@ -55,5 +99,81 @@
 }
 
 .prices__toggles {
-  margin-top:10px;
- }
+    margin-top:30px;
+}
+
+.table-pricing__inside{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 660px) {
+
+.table-pricing__inside{
+  display:inline;
+}
+
+.prices__triagle{
+  margin-bottom:0px;
+}
+
+
+.table-pricing{
+  position:static;
+  width:100%;
+
+}
+
+.prices{
+  overflow:visible;
+  margin:0 auto;
+
+
+
+}
+
+
+.table-pricing__spacial{
+  background-image:url(../img/bg-hit-tablet.svg);
+}
+
+
+.table-pricing__span{
+  display:none;
+}
+
+
+.table-pricing__umpy{
+  display:table-cell;
+
+}
+
+.table-pricing__caption--tablet{
+  background:none;
+
+}
+.table-pricing__imagecell{
+  text-align: center;
+}
+
+.table-pricing__hit{
+  position:relative;
+  top:-10px;
+  left:-10px;
+}
+
+
+}
+
+@media (min-width: 960px){
+
+.table-pricing{
+  position:static;
+  max-width:934px;
+}
+
+.table-pricing__hit{
+
+}
+}

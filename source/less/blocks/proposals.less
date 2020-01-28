@@ -4,12 +4,13 @@
 }
 
 .proposals__wrapper {
-   background-color:#ffffff;
+  background-color:#ffffff;
 
 }
 
 .proposals__title{
-  width:350px;
+  padding-left:10px;
+  padding-right:10px;
   text-align:center;
   font-family:"opensanslight","arial",sans-serif;
   color:@text-color;
@@ -25,14 +26,15 @@
 .proposals__pictures{
   display:none;
 }
-.list-paragraph__text{
-  text-align:center;
+
+
+
+
+@media(min-width: 660px){
+
+.list-paragraph__left{
+    width:40%;
 }
-
-
-
-@media(min-width: 768px){
-
 
 .proposals__wrapper{
   padding-top:10px;
@@ -40,20 +42,21 @@
   text-align:center;
 }
 
-
 .proposals__title{
   width:100%;
   font-size: 40px;
   line-height:50px;
   margin:0px;
+  padding:0;
 
 }
+
 
 .proposals__title--second {
   width:350px;
   text-align:center;
   margin-top:5px;
-  margin-bottom: 1px;
+  margin-bottom: 50px;
 }
 
 
@@ -61,60 +64,81 @@
 .list-paragraph__wrapper{
   display:flex;
   justify-content: space-around;
-  position:relative;
-  top:-50px;
+  align-items: center;
+
 }
 
 .list-paragraph{
   order:1;
-}
 
-.list-paragraph__item{
-  text-align:left;
-}
-
-
-.list-paragraph__text{
-  text-align:left;
 }
 
 
 }
 
-@media(min-width: 1024px){
- .list-paragraph{
-  width:100%;
-  display:flex;
-  justify-content:center;
- }
+@media(min-width: 960px){
+
+.proposals__list{
+  position:relative;
+  top:-89px;
+}
+
+.list-paragraph{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
 
 .proposals__img{
   display:none;
 
 }
 
+.list-paragraph__title{
+  font-size: 30px;
+  line-height: 30px;
+  padding-top:30px;
+  teext-align:center;
+}
+
+
 .list-paragraph__wrapper{
   display:block;
   position:relative;
-  top:-80px;
-
 }
 
 .proposals__pictures{
+  width:300px;
+  height:300px;
   display:inline-block;
   margin-bottom: 20px;
-
-
-
+  position:relative;
+  z-index:1;
 }
 
 .list-paragraph__triagle{
   width:100%;
 
 }
+
 .list-paragraph__item{
   text-align:center;
 
 }
+
+.proposals__wrapper{
+  padding-top:78px;
+  padding-bottom:75px;
+}
+
+
+.proposals__title{
+  font-size: 50px;
+}
+
+.proposals__title--second{
+  width:600px;
+}
+
 
 }

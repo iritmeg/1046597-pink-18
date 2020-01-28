@@ -1,153 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
-<header class="page-header">
-  <div class="top-line">
-    <a class="top-line__logo"> <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink"> </a>
-    <button class="top-line__button"> <img src="img/icon-menu-burger.svg" width="49" height="24"> </button>
-  </div>
-<nav class="main-nav">
-  <ul class="main-nav__list site-list">
-    <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
-    <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
-  </ul>
-</nav>
-  <section class="users-foto">
-    <h1 class="users-foto__title"> Фотографии пользователей </h1>
-  </section>
-
+<header class="page-header page-header--photo">
+<div class="top-line">
+  <div class="top-line__wrapper">
+  <a class="top-line__logo" href="index.html">
+      <picture >
+        <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип pink">
+      </picture>
+    </a>
+  <button class="top-line__button"> <img src="img/icon-menu-burger.svg" alt="закрыть" width="49" height="24"> </button>
+</div>
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"> <a class="site-list__link" href="index.html"> Главная  </a>  </li>
+      <li class="site-list__item"> <a class="site-list__link" href="#"> Фотографии  </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
+    </ul>
+  </nav>
+</div>
+<h1 class="page-header__title page-header__title--photo"> Фотографии<br> пользователей</h1>
 </header>
-
 <main class="page-photo">
   <section class="upsend-foto">
     <h2 class="upsend-foto__title"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </h2>
   </section>
-
-  <section class="foto-users">
-    <ul class="foto-users__list">
-      <li class="foto-users__item foto-users__item--big">
-        <img  class="foto-users__image foto-users__image--big" src="img/panorama-mobile@1x.jpg" width="280" height="180">
-        <p class="foto-users__eddition"> Панорама дня </p>
-        <div class="foto-users-wrapper">
-        <b class="foto-users__cite-author"> Анна <span class="foto-users__span" >(5 минут назад) </span></b>
-          <p class="foto-users__text">  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
-          <button class="foto-users__button" type="button"> <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
+    <div class="panorama">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x" >
+          <img  class="pamorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="фото-панорама" >
+        </picture>
+        <span class="panorama__eddition"> Панорама дня </span>
+        <div class="panorama-wrapper">
+        <b class="panorama__cite-author"> Анна <span class="foto-users__span" >(5 минут назад) </span></b>
+          <p class="panorama__text ">  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
+          <div class="panorama__score">
           <p class="foto-users__like"> Нравится: 215 </p>
+          <button class="foto-users__button" type="button"> <img class="foto-users__heart" alt="картинка сердце" src="img/icon-heart.svg" width="13" height="12">  </button>
         </div>
-      </li>
-
-      <li class="foto-users__item">
-        <img class="foto-users__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180">
+      </div>
+  </div>
+        <section class="foto-users">
+          <ul class="foto-users__list">
+          <li class="foto-users__item">
+            <picture>
+            <source media="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+          <img class="foto-users__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="машина">
+          </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author"> Левон <span class="foto-users__span"> (5 часов назад)</span></b>
           <p class="foto-users__text"> Вчера он на луну летал, сегодня в руки к нам попал. </p>
-          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
           <p class="foto-users__like"> Нравится: 356 </p>
+          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12">  </button>
         </div>
-      </li>
-
-      <li class="foto-users__item" >
-        <img class="foto-users__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180">
+        </li>
+          <li class="foto-users__item" >
+        <picture>
+          <source media="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+        <img class="foto-users__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="барабан" >
+        </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author">Антон <span class="foto-users__span">(12 часов назад)</span></b>
           <p class="foto-users__text"> Соседи будут рады! </p>
-          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
           <p class="foto-users__like"> Нравится: 666 </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12"></button>
         </div>
       </li>
-
       <li class="foto-users__item">
-        <img class="foto-users__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x" >
+        <img class="foto-users__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="окно">
+      </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author"> Борис <span class="foto-users__span">(20 часов назад)</span> </b>
           <p class="foto-users__text">  Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
           <p class="foto-users__like"> Нравится: 215  </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12"></button>
         </div>
       </li>
-
-
       <li class="foto-users__item">
-        <img class="foto-users__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x" >
+        <img class="foto-users__image" src="img/photo-fair-mobile@1x.jpg"  srcset="img/photo-fair-mobile@2x.jpg" alt="бахча" >
+      </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author"> Сергей <span class="foto-users__span">(25 часов назад)</span></b>
           <p class="foto-users__text"> Самая кубанская в мире! </p>
-          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
           <p class="foto-users__like"> Нравится: 4  </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12"></button>
         </div>
       </li>
-
       <li class="foto-users__item">
-        <img class="foto-users__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x" >
+        <img class="foto-users__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="ноги">
+      </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author"> Максим <span class="foto-users__span">(40 часов назад)</span> </b>
           <p class="foto-users__text"> Где снег-то? </p>
-          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12"></button>
           <p class="foto-users__like"> Нравится: 150  </p>
+          <button class="foto-users__button" type="button"><img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12"></button>
         </div>
       </li>
-
-
       <li class="foto-users__item">
-        <img class="foto-users__image" src="img/photo-wing-mobile@1x.jpg" width="260" height="160">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x" >
+        <img class="foto-users__image" src="img/photo-wing-mobile@1x.jpg"  srcset="img/photo-wing-mobile@2x.jpg" alt="крыло самолета">
+      </picture>
         <div class="foto-users-wrapper">
         <b class="foto-users__cite-author"> Надежда <span class="foto-users__span">(45 часов назад)</span></b>
           <p class="foto-users__text"> Всем GM и взаимные лайки!  </p>
-          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" width="13" height="12">  </button>
           <p class="foto-users__like"> Нравится: 2560 </p>
+          <button class="foto-users__button" type="button">  <img class="foto-users__heart" src="img/icon-heart.svg" alt="картинка сердце" width="13" height="12">  </button>
         </div>
       </li>
   </ul>
 </section>
-
-<form class="form" action="https://echo.htmlacademy.ru" method="get">
+<form class="form-foto" action="https://echo.htmlacademy.ru" method="get">
   <section class="up-foto">
     <h2 class="up-foto__title"> Затмите их всех!<br> Выкладывайте все, что накопилось в <br> телефоне! </h2>
   </section>
-
   <section class="exsemple-post">
-    <img class="exsemple-post__img" src="img/photo-road-mobile@1x.jpg">
-    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-crop.svg"> </button>
-    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-fill.svg"> </button>
-    <button class="exsemple-post__btn" type="button"> <img  src="img/icon-editor-contrast.svg"> </button>
-
-
-    <div class="exsemple-post__slidecontainer">
-      <input class="exsemple-post__input" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <div class="exsemple-post__wrapper1">
+    <picture>
+      <source media="(min-width:960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+      <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x" >
+    <img class="exsemple-post__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="зимняя дорога" >
+    </picture>
     </div>
-
+    <div class="exsemple-post__wrapper2">
+    <div class="exsemple-post__sliderconteiner">
+      <button class="exsemple-post__btn" type="button"> <img src="img/icon-editor-crop.svg" alt="кнопка" > </button>
+      <input class="exsemple-post__input exsemple-post__input--tablet" type="range" min="1" max="100" value="50" id="myRange">
+      <button class="exsemple-post__btn" type="button"> <img src="img/icon-editor-fill.svg" alt="кнопка"> </button>
+      <input class="exsemple-post__input exsemple-post__input--tablet" type="range" min="1" max="100" value="50" id="myRange2">
+      <button class="exsemple-post__btn" type="button"> <img src="img/icon-editor-contrast.svg" alt="кнопка"> </button>
+      <input class="exsemple-post__input exsemple-post--mobile" type="range" min="1" max="100" value="50" id="myRange3">
     <div class="exsemple-post__submit bottons-submit">
       <button class="bottons-submit__post" type="submit"> Запостить</button>
       <button class="bottons-submit__post bottons-submit__post--b " type="button"> Отмена </button>
     </div>
+</div>
+  </div>
   </section>
 </form>
-
-<footer class="footer footer-form">
-  <a class="footer__link" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
+</main>
+  <footer class="footer footer-form-form">
+  <a class="footer__link" href="index.html">
+    <picture>
+    <source media="(min-width:1024px)" srcset="img/logo-pink-blue-desktop.svg" >
+    <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+  </picture>
+    </a>
   <ul class="social-icons">
-    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="social-icons__img" src ="img/icon-twitter.svg" width="15" height="18" alt="Логотип сайта Твитер"> </a>
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Твитер"> <img src ="img/icon-twitter.svg" width="15" height="18" alt="Логотип сайта Твитер"> </a>
     </li>
-    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="social-icons__img" src ="img/icon-facebook.svg" width="15" height="18" alt="Логотип сайта Фейсбук"> </a>
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Фейсбук"> <img src ="img/icon-facebook.svg" width="15" height="18" alt="Логотип сайта Фейсбук"> </a>
     </li>
-    <li class="social-icons__item"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="social-icons__img" src ="img/icon-youtube.svg" width="15" height="18" alt="Логотип сайта Ютуб"> </a>
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Ютуб"> <img src ="img/icon-youtube.svg" width="15" height="18" alt="Логотип сайта Ютуб"> </a>
     </li>
   </ul>
-
   <div class="reference">
     <p class="reference__text"> Разработано </p>
     <a class="reference__link" href="https://htmlacademy.ru/intensive/adaptive">
     <img class="reference__img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
-
-</footer>
-
+    </footer>
+    </body>
+    </html>

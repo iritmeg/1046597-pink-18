@@ -5,16 +5,12 @@
 
 .map__image {
   height:272px;
-  background-image:url(../img/bg-map-mobile@1x.png);
-  background-position:left bottom;
-  background-size:500px 800px;
   position:relative;
 }
 
-
 .map__image::before {
   content:"";
-  height:62px;
+  height:60px;
   display:block;
   background-image:url(../img/bg-triangle-white-footer.svg);
   background-position:center;
@@ -22,57 +18,88 @@
 
 .map__icon{
   position:absolute;
-  left:220px;
-  top:140px;
-
+  left:calc(50% - 18px);
+  top:calc(50% + 24px);
 }
 
 
-@media (min-width: 768px){
+@media (max-width: 659px) {
+.map__image {
+  background-image:url(../img/bg-map-mobile@1x.png);
+  background-position:left bottom;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+    @media (min-resolution:@retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    }
+}
+
+
+}
+
+@media (min-width: 660px){
   .map__image {
     height:500px;
     background-image:url(../img/bg-map-tablet@1x.jpg);
     background-repeat:no-repeat;
     background-size:800px 800px;
     background-position: bottom ;
-  }
+
+    @media (min-resolution:@retina-dppx) {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+}
+
+.map__icon{
+  top:calc(50% - 35px);
+}
 
 
 .map__image::before {
   content:"";
-  height:63px;
+  height:70px;
   display:block;
   background-image:url('../img/bg-triangle-white-footer.svg');
   background-repeat:no-repeat;
+  background-size:contain;
 
-
-}
-
-.map__icon{
   position:absolute;
-  left:363px;
-  top:204px;
-
+  width:100%;
+  top:-2px;
+  left:0px;
 }
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
 .map__image {
     background-image:url(../img/bg-map-desktop@1x.jpg);
     background-repeat:no-repeat;
     background-size:100%;
-    background-position:center ;
+    background-position:center;
 
-  }
-
-
-.map__icon{
-  position:absolute;
-  left:733px;
-  top:312px;
-
+    @media (min-resolution:@retina-dppx) {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
 }
 
+.map__icon{
+  top:calc(50% + 40px);
+
+}
+.map__image::before {
+  content:"";
+  height:102px;
+  display:block;
+  background-image:url('../img/bg-triangle-white-footer.svg');
+  background-repeat:no-repeat;
+  background-size:contain;
+
+  position:absolute;
+  width:100%;
+  top:-2px;
+  left:0px;
+}
 
 }

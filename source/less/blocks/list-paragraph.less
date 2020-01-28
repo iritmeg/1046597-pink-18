@@ -4,6 +4,7 @@
   list-style: none;
   padding:0px;
   margin:0px;
+  text-align:center;
 
 }
 
@@ -21,6 +22,7 @@
 .list-paragraph__item{
   text-align:center;
 
+
 }
 .list-paragraph__text{
   margin:0 auto;
@@ -34,4 +36,77 @@
 
 .list-paragraph__wrapper{
   text-align:center;
+  position:relative;
+
+}
+
+.list-paragraph__triagle{
+  width:100%;
+}
+
+.proposals__img{
+  position:relative;
+  z-index:1;
+  width:70%;
+  top:61px;
+}
+
+@media (min-width:660px){
+
+.list-paragraph__title{
+  text-align:left;
+  padding-top:20px;
+  margin-left:0px;
+}
+
+  .list-paragraph__text{
+    text-align:left;
+  }
+
+
+.proposals__img{
+  top:0px;
+  width:100%;
+}
+
+.list-paragraph{
+  margin-bottom:45px;
+}
+
+
+.list-paragraph__triagle{
+  position:absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+  z-index:0;
+}
+
+}
+
+@media (min-width:960px){
+
+  .list-paragraph__title{
+
+    margin-right:0px;
+    text-align:center;
+    width:100%;
+    padding-bottom:10px;
+  }
+
+  .list-paragraph__text{
+    text-align:center;
+    font-size:18px;
+    line-height:30px;
+  }
+
+
+.list-paragraph__triagle{
+  max-width:100%;
+  position:relative;
+  z-index:0;
+
+}
+
+
 }

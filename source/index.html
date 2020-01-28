@@ -2,38 +2,45 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
 <header class="page-header">
-
 <div class="top-line">
-  <a class="top-line__logo"> <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип pink"> </a>
-  <a class="top-line__tablet"> <img class="page-header_logo-imagetablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип pink"> </a>
-  <button class="top-line__button"> <img src="img/icon-menu-burger.svg" width="49" height="24"> </button>
+  <div class="top-line__wrapper">
+  <a class="top-line__logo">
+      <picture >
+        <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип pink">
+      </picture>
+    </a>
+  <button class="top-line__button"> <img src="img/icon-menu-cross.svg" width="49" height="24" alt="закрыть"> </button>
 </div>
-
-<nav class="main-nav">
-  <ul class="main-nav__list site-list">
-    <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
-    <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
-    <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
-  </ul>
-</nav>
-
-  <section class="main-banner">
-    <h1 class="main-banner__title ">Взгляните на жизнь<br>иначе!</h1>
-    <img  class="main-banner__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286">
-  </section>
-
-</header>
-
- <main class="page-main">
-
-<section class="download">
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"> <a class="site-list__link" href="#"> Главная  </a>  </li>
+      <li class="site-list__item"> <a class="site-list__link" href="photo.html"> Фотографии  </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="form.html"> Конкурс </a> </li>
+      <li class="site-list__item"> <a class="site-list__link" href="https://htmlacademy.ru"> HTML Academy  </a> </li>
+    </ul>
+  </nav>
+</div>
+<section class="main-banner">
+<div class="main-banner__wrapper">
+  <h1 class="main-banner__title ">Взгляните на жизнь<br>иначе!</h1>
+</div>
+<div class="main-banner__wrapperpicture">
+<picture class="main-banner__picture">
+    <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
+    <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x" >
+  <img class="main-banner__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" alt="Телефон" >
+</picture>
+</div>
+<div class="download">
   <h2 class="visually-hidden">Подходит для разных систем</h2>
     <a class="download__button" href="https://www.apple.com/il/ios/app-store">Скачать приложение</a>
     <ul class="download__list icon-list">
@@ -48,39 +55,46 @@
       </li>
     </ul>
   <p class="icon-list__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+</div>
 </section>
-
+</header>
+<main class="page-main">
 <section class="proposals">
 <div class="proposals__wrapper">
   <h2 class="proposals__title"> Устали от серости мегаполиса?</h2>
   <h2 class="proposals__title proposals__title--second "> Нам есть, что вам предложить!</h2>
 </div>
-  <img class="list-paragraph__triagle" src="img/bg-triangle-white.svg" >
 <div class="list-paragraph__wrapper">
+  <img class="list-paragraph__triagle" src="img/bg-triangle-white.svg" alt="угол">
     <ul class="proposals__list list-paragraph">
       <li class="list-paragraph__item">
-        <img class="proposals__pictures" src="img/iphone-screen-1-desktop@1x.png" >
+        <img class="proposals__pictures" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png" alt="телефон" >
         <h3 class="list-paragraph__title">Поднимает настроение</h3>
           <p class="list-paragraph__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p></li>
       <li class="list-paragraph__item">
-        <img class="proposals__pictures" src="img/iphone-screen-2-desktop@1x.png"  >
+        <img class="proposals__pictures" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png" alt="телефон">
         <h3 class="list-paragraph__title">Меняет мир вокруг</h3>
           <p class="list-paragraph__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></li>
       <li class="list-paragraph__item">
-        <img class="proposals__pictures" src="img/iphone-screen-3-desktop@1x.png"  >
+        <img class="proposals__pictures" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png" alt="телефон">
         <h3 class="list-paragraph__title"> Заводит новых друзей </h3>
           <p class="list-paragraph__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </li>
     </ul>
-
-  <img class="proposals__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" >
-
+    <div class="list-paragraph__left">
+            <picture>
+                <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x" >
+              <img class="proposals__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="телефон">
+            </picture>
+    </div>
   </div>
 </section>
-
 <section class="effect-time">
-  <div class="effect-time__wrapper">
-  <img class="effect-time__img" src="img/icon-timer.svg" width="238">
+  <div class="effect-time__left">
+<div class="effect-time__wrapper">
+  <img class="effect-time__img" src="img/icon-timer.svg" alt="часы" width="238">
+    <p class="effect-time__span"> <span class="effect-time__number"> 24  </span> </p>
+</div>
   </div>
   <div class="effect-time__hours">
   <h2 class="effect-time__title"> Эффект на 24 часа!</h2>
@@ -88,57 +102,103 @@
     <a class="effect-time__link" href="#"> Узнать больше об исследовании </a>
   </div>
 </section>
-
 <section class="reviews">
     <h2 class="visually-hidden"> Отзывы о приложении </h2>
       <div class="reviews__wrapper">
         <cite class="reviews__author-name"> Николай Петров </cite>
         <p class="reviews__age"> 25 лет, водитель трамвая </p>
           <p class="reviews__text"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            <img  class="reviews__img" src="img/icon-review-arrow-left.svg">
-            <img class="reviews__img reviews__img--left" src="img/icon-review-arrow-right.svg">
+            <img  class="reviews__img" src="img/icon-review-arrow-left.svg" alt="левая стрелка">
+            <img class="reviews__img reviews__img--left" src="img/icon-review-arrow-right.svg" alt="правая стрелка">
           </p>
           </div>
             <div class="reviews__toggles slider">
-              <button class="slider__button slider__button--first" type="button"></button>
+              <button class="slider__button slider__button--current" type="button"></button>
               <button class="slider__button " type="button"></button>
               <button class="slider__button" type="button"></button>
       </div>
 </section>
-
 <section class="prices">
+    <img class="prices__triagle" src="img/bg-triangle-white.svg" alt="угол">
   <h2 class="visually-hidden"> Расценки и удобства </h2>
     <table class="prices__table table-pricing">
-      <caption class="table-pricing__caption"> Стандарт
+      <thead>
+        <tr>
+      <th class="table-pricing__caption table-pricing__umpy table-pricing__caption--tablet"> </th>
+      <th class="table-pricing__caption "> База
+        <span class="table-pricing__price"> 1,99 USD </span>
+      </th>
+      <th class="table-pricing__caption"> Стандарт
         <span class="table-pricing__price"> 3,99 USD </span>
-        <span class="table-pricing__spacial"> ХИТ </span>
-        </caption>
+        <span class="table-pricing__spacial"> <span class="table-pricing__hit"> ХИТ </span> </span>
+        </th>
+        <th class="table-pricing__caption "> Анлим
+        <span class="table-pricing__price"> 9,99 USD </span>
+        </th>
+        </tr>
+      </thead>
+      <tbody>
         <tr class="table-pricing__cells">
-          <td class="table-pricing__text">Розовый фильтр</td>
-          <td class="table-pricing__imagecell"> <img class="table-pricing__image table-pricing__image--yes">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+          <td class="table-pricing__umpy">Розовый фильтр</td>
+          <td class="table-pricing__text table-pricing__imagecell "> <span class="table-pricing__span"> Розовый фильтр </span> <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg></td>
+          <td class="table-pricing__text table-pricing__imagecell">
+              <span class="table-pricing__inside">
+                <span class="table-pricing__span"> Розовый фильтр </span>
+                <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </span>
+          </td>
+          <td class="table-pricing__text table-pricing__imagecell "> <span class="table-pricing__span">Розовый фильтр</span>
+              <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+          </td>
+      </tr>
+      <tr class="table-pricing__cells">
+        <td class=" table-pricing__umpy"> Смайлики</td>
+          <td class="table-pricing__text table-pricing__imagecell table-pricing__imagecell--no "> <span class="table-pricing__span"> Смайлики </span> <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+            </svg></td>
+          <td class="table-pricing__imagecell ">
+              <span class="table-pricing__inside">
+                <span class="table-pricing__span">Смайлики </span>
+                <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+            </span>
+          </td>
+          <td class="table-pricing__imagecell "> <span class="table-pricing__span"> Смайлики </span>
+            <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
             <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
             </svg>
           </td>
       </tr>
       <tr class="table-pricing__cells">
-          <td> Смайлики</td>
-          <td class="table-pricing__imagecell"> <img class="table-pricing__image table-pricing__image--yes" >
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-            </svg>
-          </td>
-      </tr>
-      <tr class="table-pricing__cells">
-          <td class="table-pricing__text">Комментарии </td>
-          <td class="table-pricing__imagecell table-pricing__imagecell--no">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+        <td class="table-pricing__umpy">Комментарии </td>
+          <td class="table-pricing__text table-pricing__imagecell table-pricing__imagecell--no"> <span class="table-pricing__span"> Комментарии </span>
+            <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
             <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
             </svg>
+          </td>
+          <td class="table-pricing__text table-pricing__imagecell table-pricing__imagecell--no">
+              <span class="table-pricing__inside">
+                <span class="table-pricing__span"> Комментарии </span>
+                <svg version="1.0" class="table-pricing__svgmobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="16.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path  d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+            </span>
         </td>
+        <td class="table-pricing__text table-pricing__imagecell"> <span class="table-pricing__span"> Комментарии </span>
+            <svg version="1.0" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+            </svg>
+          </td>
       </tr>
+    </tbody>
     </table>
-
 <div class="prices__toggles slider">
   <button class="slider__button" type="button"></button>
   <button class="slider__button slider__button--current" type="button"></button>
@@ -146,28 +206,42 @@
 </div>
 </section>
 </main>
-
 <footer class="footer">
-
   <section class="contacts">
   <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
   <div class="contacts__wrapper">
   <p class="contacts__invintashion"> <b> Звоните:</b>
-    <a class="contacts__link" href="tel:+7 (812) 555-66-66"> +7 (812) 555-66-66 </a> </p>
+    <a class="contacts__link" href="tel:+7(812)555-66-66"> +7 (812) 555-66-66 </a> </p>
   <p class="contacts__invintashion contacts__invintashion--host"> <b> Пишите:</b>
     <a class="contacts__link" href="mail@htmlacademy.ru"> mail@htmlacademy.ru  </a> </p>
   <p class="contacts__invintashion "> <b > Приезжайте в гости:</b>
-    <a class="contacts__link" href="ул. Большая Конюшенная, 19/8"> ул. Большая <br> Конюшенная, 19/8</a> </p>
-  <div>
-</section>
-
-<section class="map">
-  <div class="map__image">
-    <img class="map__icon" src="img/icon-map-marker.svg">
+    <a class="contacts__link" href="ул.Большая-Конюшенная,19/8"> ул. Большая <br> Конюшенная, 19/8</a> </p>
   </div>
 </section>
+<section class="map">
+  <h1 class="visually-hidden">Место расположения</h1>
+  <div class="map__image">
+    <img class="map__icon" src="img/icon-map-marker.svg" alt="точка на карте" >
+  </div>
+<div class="footer footer-form-index">
+  <a class="footer__link" href="index.html"> <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип"> </a>
+  <ul class="social-icons">
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Твитер"> <img src ="img/icon-twitter.svg" width="15" height="18" alt="Логотип сайта Твитер"> </a>
+    </li>
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Фейсбук"> <img src ="img/icon-facebook.svg" width="15" height="18" alt="Логотип сайта Фейсбук"> </a>
+    </li>
+    <li class="social-icons__item"> <a class="social-icons__link" href="#" aria-label="ссылка на сайт Ютуб"> <img  src ="img/icon-youtube.svg" width="15" height="18" alt="Логотип сайта Ютуб"> </a>
+    </li>
+  </ul>
+<div class="reference">
+    <p class="reference__text"> Разработано </p>
+    <a class="reference__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <img class="reference__img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
+  </div>
+</div>
+</section>
 </footer>
-
-
+  <script src="js/picturefill.min.js"></script>
 </body>
 </html>
